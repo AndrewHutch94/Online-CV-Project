@@ -1,0 +1,134 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #444;
+    margin: 0;
+    font-weight: 300;
+    color: aquamarine;
+}
+
+h2 {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+h3 {
+    padding-top: 30px;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: aquamarine;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    float: left;
+    padding: 10px 0;
+
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 25px;
+
+    position: relative;
+}
+
+nav a {
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: black;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #444; 
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+
+}
+
+nav a:hover::before {
+    width: 100%; 
+}
+
+#introduction {
+    text-align: center; 
+    color: aquamarine;
+    padding-top: 150px;
+    padding-bottom: 350px;
+
+}
+
+#Education ul {
+    list-style: none;
+    padding-top: 10px;
+}
+
+#Education li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#Key_Skills ul {
+    list-style: square;
+    padding-top: 10px;
+
+}
+
+#Key_Skills li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#Work_Exp ul {
+    list-style: none;
+    padding-top: 10px;
+}
+
+#Work_Exp li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#Projects a {
+    color: aquamarine;
+    text-transform: uppercase;
+    margin-left: 45px;
+}
+
+#Contact {
+    text-align: center;
+}
